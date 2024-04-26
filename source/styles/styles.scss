@@ -2,6 +2,30 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/nav-list.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/options.scss";
+@import "./blocks/special.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/logo-letters.scss";
+@import "./blocks/button.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/card.scss";
+@import "./blocks/more-card.scss";
+@import "./blocks/add-card.scss";
+@import "./blocks/add-products.scss";
+@import "./blocks/banner.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/box.scss";
