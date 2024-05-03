@@ -1,0 +1,18 @@
+.card__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-black-2;
+  text-transform: uppercase;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__text {
+  font-family: $font-primary;
+  font-size: 12px;
+  line-height: 16px;
+  color: $basic-text;
+}
