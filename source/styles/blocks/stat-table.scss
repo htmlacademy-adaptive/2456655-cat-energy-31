@@ -1,0 +1,17 @@
+.stat-table {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.stat-table__text {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.stat-table__number {
+  font-family: $font-secondary;
+  font-weight: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

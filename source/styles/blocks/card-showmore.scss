@@ -1,0 +1,30 @@
+.card-showmore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-showmore__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card-showmore__title::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  color: $special-grey-6;
+  padding-left: 1600px;
+}
+
+.card-showmore__text {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
