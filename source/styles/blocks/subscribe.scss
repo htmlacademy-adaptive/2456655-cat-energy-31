@@ -1,8 +1,38 @@
+.subscribe__field {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+  }
+}
+
 .subscribe__title {
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
+  margin-top: 40px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    margin-top: 80px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+    margin-top: 96px;
+  }
 }
 
 .subscribe__text {
@@ -10,4 +40,37 @@
   font-size: 16px;
   line-height: 24px;
   color: $basic-black;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    width: 522px;
+    margin: 0 auto 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1000px;
+  }
+}
+
+.subscribe__button {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px 80px;
+  border: none;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 15px 70px;
+    margin-bottom: 0;
+  }
+}
+
+::placeholder {
+  color: $basic-text;
 }

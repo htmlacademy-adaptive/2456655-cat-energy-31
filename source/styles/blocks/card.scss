@@ -1,5 +1,34 @@
 .card {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  padding: 20px;
+  width: 280px;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    width: 324px;
+    border-bottom: none;
+    background-image: linear-gradient(180deg, $basic-white 90px, $basic-grey 90px);
+    box-sizing: border-box;
+    padding: 5px 37px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.card__container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .card__title {
@@ -8,15 +37,50 @@
   line-height: 20px;
   color: $basic-black-2;
   text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  width: 76px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 140px;
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.card__title-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-black-2;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+  }
 }
 
 .card__link {
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+    margin-bottom: 22px;
+    width: 250px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
-.card__text {
-  font-family: $font-primary;
-  font-size: 12px;
-  line-height: 16px;
-  color: $basic-text;
+.card__button {
+  grid-column: 1 / -1;
+  font-size: 16px;
+  line-height: 20px;
 }

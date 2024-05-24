@@ -1,11 +1,37 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 30px;
+  }
+}
+
+.main-nav__logo-container {
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .main-nav__toggle {
   background-color: $basic-white;
   background-image: url("../../icons/stack.svg#burger");
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
   border: none;
   width: 24px;
   height: 24px;
+  position: relative;
+  display: none;
+  margin-left: auto;
+  padding: 0;
 }
 
 .main-nav__toggle--close {

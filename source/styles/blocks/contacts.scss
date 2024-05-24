@@ -2,6 +2,19 @@
   display: flex;
   background-color: $basic-white;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    left: 110px;
+    top: 95px;
+    width: 407px;
+    padding: 60px 80px;
+  }
 }
 
 .contacts__intro {
@@ -11,11 +24,39 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
 }
 
 .contacts__address {
   font-style: normal;
+  font-size: 14px;
   line-height: 20px;
   width: 140px;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 157px;
+    min-height: 80px;
+    text-align: right;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.contacts--background {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
 }

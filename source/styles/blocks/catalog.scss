@@ -1,6 +1,34 @@
+.catalog {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    gap: 80px 63px;
+  }
+}
+
 .catalog__title {
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
+  margin-top: 27px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+  }
 }

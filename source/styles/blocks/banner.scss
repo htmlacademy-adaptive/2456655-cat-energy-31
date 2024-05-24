@@ -3,8 +3,28 @@
   flex-direction: column;
   align-items: center;
   background-color: $basic-green;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 290px;
+  max-width: 500px;
+  background-image: url("../../images/bonus-background/bonus-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 708px;
+    min-height: 200px;
+    background-image: url("../../images/bonus-background/bonus-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 245px;
+    margin-top: 45px;
+    background-image: url("../../images/bonus-background/bonus-desktop@1x.jpg");
+  }
 }
 
 .banner__text {
@@ -15,7 +35,19 @@
   text-align: center;
   position: relative;
   margin-top: 186px;
-  width: 50%;
+  width: 180px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 120px 0 auto;
+    width: 161px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 165px;
+    text-align: center;
+    margin: 188px 0 0;
+  }
 }
 
 .banner__text::before {
@@ -29,4 +61,16 @@
   left: 50%;
   transform: translateX(-50%);
   top: -120px;
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: -345px;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -133px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

@@ -1,30 +1,119 @@
 .card-showmore {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 350px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 0;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.card-showmore__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 40px 40px;
+    min-height: 340px;
+    border: 2px solid $basic-grey;
+  }
+}
+
+.card-showmore__plus {
+  position: relative;
+  padding: 0;
+  border: 0;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card-showmore__plus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: $special-grey-6;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
+.card-showmore__plus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: $special-grey-6;
+  transform: rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
 }
 
 .card-showmore__title {
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
-}
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: $basic-black-1;
 
-.card-showmore__title::before {
-  content: "";
-  display: block;
-  background-image: url("../../icons/stack.svg#plus");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 30px;
-  height: 30px;
-  color: $special-grey-6;
-  padding-left: 1600px;
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    margin-bottom: 23px;
+    width: 134px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card-showmore__text {
   font-size: 12px;
   line-height: 16px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $basic-text;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.card-showmore__button {
+  margin-top: auto;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 84px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
