@@ -16,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding: 0 38px 40px;
   }
 }
 
@@ -49,6 +50,11 @@
     margin-top: 22px;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    margin-bottom: 23px;
+  }
 }
 
 .card__title-link {
@@ -76,6 +82,7 @@
 
   @media (min-width: $desktop-width) {
     width: 169px;
+    margin: 0 auto;
   }
 }
 

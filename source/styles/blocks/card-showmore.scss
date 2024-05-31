@@ -3,6 +3,7 @@
   padding-bottom: 25px;
   max-width: 350px;
   text-align: center;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding-top: 88px;
   }
 }
 
@@ -29,6 +31,10 @@
     padding: 50px 40px 40px;
     min-height: 340px;
     border: 2px solid $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 38px 40px;
   }
 }
 
@@ -91,6 +97,11 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    margin-bottom: 36px;
+  }
 }
 
 .card-showmore__text {
@@ -105,6 +116,10 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .card-showmore__button {
@@ -115,5 +130,10 @@
     margin-top: 84px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    width: 170px;
   }
 }

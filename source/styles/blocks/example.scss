@@ -1,9 +1,17 @@
 .example {
   background-color: $special-grey-1;
-  padding-top: 45px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    background-color: $basic-white;
+    background: linear-gradient($basic-white 635px, $special-grey-1 635px);
+    padding-bottom: 0;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    background: linear-gradient($basic-white 190px, $basic-grey 190px);
   }
 }
 
@@ -14,8 +22,13 @@
 }
 
 .example__container {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 99px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 610px;
+    padding-bottom: 75px;
   }
 }
 
@@ -51,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 450px;
+    max-width: 436px;
   }
 }
 
@@ -93,5 +106,7 @@
     justify-content: space-between;
     max-width: 328px;
     text-align: left;
+    margin-top: 55px;
+    margin-bottom: 0;
   }
 }

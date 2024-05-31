@@ -4,7 +4,7 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 70px;
+    padding: 60px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,5 +58,11 @@
 
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
   }
 }

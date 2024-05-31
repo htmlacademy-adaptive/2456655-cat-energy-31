@@ -4,20 +4,19 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 35px;
-    padding-bottom: 10px;
   }
 }
 
 .special::after {
-  @media (min-width: $tablet-width) {
+  @media (width: 768px) {
     content: "";
     position: absolute;
-    color: $special-grey-7;
+    background-color: $special-grey-7;
     height: 1px;
     width: 768px;
     margin-left: -30px;
@@ -38,6 +37,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .special__list {
@@ -51,6 +54,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 250px);
     gap: 37px 153px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,6 +78,10 @@
     min-height: 156px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 118px;
   }
 }
 
