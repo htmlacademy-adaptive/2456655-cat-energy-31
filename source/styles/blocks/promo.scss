@@ -11,7 +11,6 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
-    padding-bottom: 0;
     min-height: 0;
     color: $basic-black;
     text-align: left;
@@ -32,7 +31,6 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     margin-left: 80px;
-    margin-right: 80px;
     width: 1060px;
   }
 }
@@ -40,11 +38,11 @@
 .promo__title {
   font-size: 36px;
   line-height: 36px;
-  margin-top: 27px;
+  margin-top: 26px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 33px auto 28px 90px;
+    margin: 39px 90px 16px;
     max-width: 416px;
     font-size: 60px;
     line-height: 60px;
@@ -52,15 +50,15 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-top: 80px;
+    margin-top: 75px;
   }
 }
 
 .promo__intro {
   line-height: 14px;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 29px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-left: 90px;
@@ -71,24 +69,26 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    margin-bottom: 22px;
   }
 }
 
 .promo__image {
   margin: 0;
-  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -35px;
     margin-bottom: 0;
+    margin-left: 0;
     width: 709px;
     height: 609px;
+    grid-column: 1 / -1;
+    grid-row: 3 / 5;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
-    margin: 0 -81px;
+    margin: -3px -81px;
     width: 552px;
     height: 499px;
   }
@@ -98,6 +98,8 @@
   margin-left: auto;
   margin-right: auto;
   width: 280px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;

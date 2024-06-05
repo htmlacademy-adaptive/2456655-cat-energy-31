@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     width: 245px;
-    margin-top: 45px;
+    margin-top: 61px;
     background-image: url("../../images/bonus-background/bonus-desktop@1x.jpg");
   }
 }
@@ -34,11 +34,11 @@
   color: $basic-white;
   text-align: center;
   position: relative;
-  margin-top: 186px;
+  margin-top: 187px;
   width: 180px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 120px 0 auto;
+    margin: 0 124px 0 auto;
     width: 161px;
     text-align: left;
   }
@@ -46,7 +46,7 @@
   @media (min-width: $desktop-width) {
     width: 165px;
     text-align: center;
-    margin: 188px 0 0;
+    margin: 185px 0 0;
   }
 }
 
@@ -60,16 +60,16 @@
   height: 80px;
   left: 50%;
   transform: translateX(-50%);
-  top: -120px;
+  top: -128px;
 
   @media (min-width: $tablet-width) {
-    top: 50%;
-    left: -345px;
+    top: 46%;
+    left: -344px;
     transform: translateY(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    top: -133px;
+    top: -128px;
     left: 50%;
     transform: translateX(-50%);
   }

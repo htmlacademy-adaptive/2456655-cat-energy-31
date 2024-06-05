@@ -1,16 +1,16 @@
 .option-card {
   display: flex;
   flex-direction: column;
-  padding: 21px 33px 18px 20px;
+  padding: 23px 20px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 50px;
+    padding: 69px 53px 55px;
     min-height: 248px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 52px 62px;
+    padding: 46px 52px 58px;
     min-height: 263px;
   }
 }
@@ -18,8 +18,8 @@
 .option-card__content {
   position: relative;
   margin-bottom: 15px;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   border-bottom: 1px solid $special-grey-8;
 
   @media (min-width: $tablet-width) {
@@ -36,18 +36,17 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
-    top: 10px;
+    top: 21px;
     left: auto;
     right: 10px;
     width: 200px;
-    height: 211px;
+    height: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,8 +62,8 @@
   background-image: url("../../icons/stack.svg#cat-slim");
   width: 36px;
   height: 50px;
-  top: -2px;
-  left: 5px;
+  top: -3px;
+  left: 7px;
   background-repeat: no-repeat;
   position: absolute;
   content: "";
@@ -79,7 +78,7 @@
 
   @media (min-width: $desktop-width) {
     top: -5px;
-    left: 10px;
+    left: 15px;
     right: auto;
     width: 70px;
     height: 97px;
@@ -93,20 +92,20 @@
   background-repeat: no-repeat;
   position: absolute;
   content: "";
-  top: 10px;
-  left: -9px;
+  top: 11px;
+  left: -8px;
 
   @media (min-width: $tablet-width) {
-    top: 55px;
+    top: 65px;
     left: auto;
-    right: -21px;
-    width: 268px;
-    height: 112px;
+    right: -24px;
+    width: 267px;
+    height: 111px;
   }
 
   @media (min-width: $desktop-width) {
     top: 20px;
-    left: -20px;
+    left: -19px;
     right: auto;
     width: 134px;
     height: 56px;
@@ -127,12 +126,14 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 0;
+    margin-left: 1px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
-    margin-left: 162px;
+    margin-bottom: 74px;
+    margin-left: 161px;
+    margin-top: 8px;
   }
 }
 
@@ -141,8 +142,15 @@
 
   @media (min-width: $tablet-width) {
     max-width: 340px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    max-width: 460px;
   }
 }
 
@@ -154,6 +162,7 @@
   position: relative;
   text-decoration: none;
   color: $basic-black;
+  padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -170,13 +179,14 @@
   background-image: url("../../icons/stack.svg#arrow");
   width: 24px;
   height: 12px;
-  top: 50%;
-  left: 100px;
+  top: 59%;
+  right: 48%;
   transform: translateY(-50%);
   background-size: contain;
 
   @media (min-width: $tablet-width) {
-    left: 120px;
+    top: 57%;
+    right: 4%;
   }
 }
 

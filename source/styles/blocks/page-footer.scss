@@ -4,11 +4,15 @@
 
 .page-footer__footer {
   background-color: $basic-grey;
-  padding: 20px 0;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 40px;
     padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 43px;
   }
 }
 
@@ -20,11 +24,5 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-
-.page-footer__copyright {
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
   }
 }

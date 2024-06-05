@@ -13,15 +13,18 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    margin-left: auto;
+    margin-left: 61px;
     font-size: 18px;
     line-height: 24px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
     width: 600px;
+    padding-top: 17px;
+    margin-left: 417px;
   }
 }
 
@@ -34,6 +37,10 @@
     margin-left: 33px;
     margin-right: 0;
     border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 34px;
   }
 }
 
@@ -77,7 +84,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -10px;
+    bottom: -9px;
     height: 2px;
     background-color: $basic-green;
   }

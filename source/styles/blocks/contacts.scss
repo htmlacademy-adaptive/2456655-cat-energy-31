@@ -4,16 +4,16 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 62px 70px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 1;
-    left: 110px;
-    top: 95px;
+    left: 109px;
+    top: 89px;
     width: 407px;
-    padding: 60px 80px;
+    padding: 61px 80px;
   }
 }
 
@@ -64,5 +64,9 @@
 .contacts__city {
   @media (min-width: $tablet-width) {
     margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
   }
 }

@@ -1,6 +1,6 @@
 .special {
   position: relative;
-  padding-bottom: 49px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 35px;
+    padding-top: 50px;
   }
 }
 
@@ -30,16 +30,16 @@
   line-height: 40px;
   color: $basic-black;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 71px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 71px;
   }
 }
 
@@ -50,11 +50,13 @@
   margin: 0;
   padding-left: 0;
   counter-reset: feature;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 250px);
-    gap: 37px 153px;
-    padding-bottom: 47px;
+    gap: 77px 133px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,6 +84,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 118px;
+    padding-top: 111px;
   }
 }
 
@@ -105,6 +108,11 @@
   background-size: 30px 32px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    top: 1px;
+    left: -1px;
+  }
 }
 
 .special__list-item--two::before {
@@ -119,6 +127,10 @@
   background-size: 25px 30px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    left: -1px;
+  }
 }
 
 .special__list-item--four::before {
@@ -139,7 +151,7 @@
     content: counter(feature);
     counter-increment: feature;
     top: -38px;
-    right: 12px;
+    right: 0;
     width: 136px;
     height: 280px;
     font-size: 280px;

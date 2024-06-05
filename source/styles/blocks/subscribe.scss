@@ -31,7 +31,7 @@
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 72px;
-    margin-top: 96px;
+    margin-top: 98px;
   }
 }
 
@@ -41,15 +41,13 @@
   line-height: 24px;
   color: $basic-black;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin: 0 auto 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
     text-align: center;
     width: 522px;
-    margin: 0 auto 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,4 +71,5 @@
 
 ::placeholder {
   color: $basic-text;
+  padding-left: 13px;
 }

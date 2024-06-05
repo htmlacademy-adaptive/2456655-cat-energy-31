@@ -31,17 +31,19 @@
           </button>
         </div>
 
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--active" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
+        <div class="navlist navlist--dropdown navlist--opened">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--active" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
 
       </nav>
     </div>
@@ -366,7 +368,9 @@
     <div class="page-footer__footer">
       <div class="page-footer__footer-wrapper content-wrapper">
         <a class="page-footer__logo footer-logo" href="index.html" aria-label="Логотип магазина Cat Energy">
-          <img class="logo-letters" src="images/logo/footer-logo.svg" width="128" height="24" alt="Логотип магазина Cat Energy">
+          <svg class="logo-letters" width="128" height="24" aria-hidden="true" focusable="false">
+            <use href="icons/stack.svg#footer-logo"></use>
+          </svg>
         </a>
 
         <ul class="social-list">
