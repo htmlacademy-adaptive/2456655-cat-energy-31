@@ -1,0 +1,207 @@
+.option-card {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 20px;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 69px 53px 55px;
+    min-height: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 52px 58px;
+    min-height: 263px;
+  }
+}
+
+.option-card__content {
+  position: relative;
+  margin-bottom: 15px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $special-grey-8;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-top: 22px;
+  }
+}
+
+.option-card__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    top: 21px;
+    left: auto;
+    right: 10px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.option-card__content--slim::after {
+  background-image: url("../../icons/stack.svg#cat-slim");
+  width: 36px;
+  height: 50px;
+  top: -3px;
+  left: 7px;
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: auto;
+    right: 40px;
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -5px;
+    left: 15px;
+    right: auto;
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.option-card__content--pro::after {
+  background-image: url("../../icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 28px;
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: -8px;
+
+  @media (min-width: $tablet-width) {
+    top: 65px;
+    left: auto;
+    right: -24px;
+    width: 267px;
+    height: 111px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: -19px;
+    right: auto;
+    width: 134px;
+    height: 56px;
+  }
+}
+
+.option-card__title {
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 28px;
+  margin-left: 70px;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 1px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+    margin-left: 161px;
+    margin-top: 8px;
+  }
+}
+
+.option-card__text {
+  color: $basic-black-2;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    max-width: 460px;
+  }
+}
+
+.option-card__link {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+  color: $basic-black;
+  padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 161px;
+  }
+}
+
+.option-card__link::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../icons/stack.svg#arrow");
+  width: 24px;
+  height: 12px;
+  top: 59%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    top: 57%;
+    right: 4%;
+  }
+}
+
+.option-card__link:hover::after {
+  background-image: url("../../icons/stack.svg#long-arrow");
+  width: 32px;
+  right: -10px;
+}
+
+.option-card__link:active {
+  opacity: 0.3;
+}
+
+.option-card__link:active::after {
+  background-image: url("../../icons/stack.svg#long-arrow");
+  width: 32px;
+  right: -10px;
+}

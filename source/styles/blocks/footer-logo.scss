@@ -1,0 +1,15 @@
+.footer-logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 41px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}

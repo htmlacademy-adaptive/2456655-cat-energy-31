@@ -1,0 +1,12 @@
+.logo-letters {
+  fill: $basic-black-1;
+
+  &:hover,
+  &:focus {
+    fill: $special-dark-grey-2;
+  }
+
+  &:active {
+    fill: $special-dark-grey-1;
+  }
+}

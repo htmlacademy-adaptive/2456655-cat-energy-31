@@ -1,0 +1,143 @@
+.card-showmore {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  max-width: 350px;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 0;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding-top: 86px;
+  }
+}
+
+.card-showmore__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 40px 40px;
+    min-height: 340px;
+    border: 2px solid $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 38px 33px;
+  }
+}
+
+.card-showmore__plus {
+  position: relative;
+  padding: 0;
+  border: 0;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 0;
+  }
+}
+
+.card-showmore__plus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: $special-grey-6;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
+.card-showmore__plus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: $special-grey-6;
+  transform: rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
+.card-showmore__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 9px;
+  color: $basic-black-1;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 49px;
+    margin-bottom: 23px;
+    width: 134px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+    margin-bottom: 26px;
+  }
+}
+
+.card-showmore__text {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $basic-text;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
+}
+
+.card-showmore__button {
+  padding: 11px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 61px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    width: 170px;
+  }
+}

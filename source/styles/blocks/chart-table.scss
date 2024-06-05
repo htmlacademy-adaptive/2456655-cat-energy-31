@@ -1,0 +1,31 @@
+.chart-table {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.chart-table__row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $special-grey-8;
+  }
+}
+
+.chart-table__right-column {
+  margin-left: 0;
+}

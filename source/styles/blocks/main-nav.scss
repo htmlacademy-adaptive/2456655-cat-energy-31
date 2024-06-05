@@ -1,0 +1,70 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 35px;
+  }
+}
+
+.main-nav__logo-container {
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.main-nav__toggle {
+  background-color: $basic-white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: none;
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+  color: $basic-black-1;
+  right: 1px;
+}
+
+.main-nav__toggle:hover,
+.main-nav__toggle:focus-visible {
+  opacity: 0.6;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.3;
+}
+
+.main-nav--closed .main-nav__toggle {
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../../icons/stack.svg#burger");
+    display: block;
+  }
+}
+
+.main-nav--closed .nav-list__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../../icons/stack.svg#cross");
+    display: block;
+  }
+}

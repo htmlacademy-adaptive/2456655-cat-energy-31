@@ -1,0 +1,79 @@
+.add-card {
+  display: grid;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $special-grey-4;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 250px;
+    padding: 25px 38px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 285px) 244px;
+    column-gap: 40px;
+    align-items: center;
+    padding: 13px 0;
+  }
+}
+
+.add-card__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-black-2;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.add-card__chart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.add-card__chart-right {
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+    width: 70px;
+    text-align: right;
+  }
+}
+
+.add-card__button {
+  font-size: 16px;
+  line-height: 20px;
+  grid-column: 1 / -1;
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 3;
+  }
+}

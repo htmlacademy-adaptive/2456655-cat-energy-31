@@ -1,0 +1,112 @@
+.example {
+  background-color: $special-grey-1;
+  padding-top: 25px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($basic-white 620px, $special-grey-1 620px);
+    padding-bottom: 0;
+    padding-top: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    background: linear-gradient($basic-white 160px, $basic-grey 160px);
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+    padding-bottom: 75px;
+  }
+}
+
+.example__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+    margin-bottom: 146px;
+  }
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+  }
+}
+
+.example__result {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-top: 54px;
+    width: 366px;
+  }
+}
+
+.example__cost {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: right;
+    max-width: 175px;
+    margin-top: 13px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 328px;
+    text-align: left;
+    margin-top: 57px;
+    margin-bottom: 0;
+  }
+}
