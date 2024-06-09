@@ -1,7 +1,7 @@
 .page__body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  font-family: $font-primary;
+  font-family: $font-primary, Tahoma, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -15,5 +15,25 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.page__title {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-black;
+  margin-top: 28px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 76px;
+    margin-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
   }
 }
