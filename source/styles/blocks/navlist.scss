@@ -1,12 +1,12 @@
 .navlist {
-  @media (width: $mobile-width-only) {
+  @media (max-width: 767px) {
     position: relative;
     display: none;
   }
 }
 
 .navlist--dropdown {
-  @media (width: $mobile-width-only) {
+  @media (max-width: 767px) {
     position: absolute;
     width: 100%;
     background-color: $basic-white;
@@ -16,7 +16,7 @@
 }
 
 .navlist--opened {
-  @media (width: $mobile-width-only) {
+  @media (max-width: 767px) {
     display: block;
   }
 }
